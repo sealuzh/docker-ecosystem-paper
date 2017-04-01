@@ -1,0 +1,49 @@
+imagename,type
+ubuntu,OS
+debian,OS
+node,Language runtime
+centos,OS
+python,Language runtime
+dockerfile/nodejs,Language runtime
+golang,Language runtime
+alpine,OS
+java,Language runtime
+nginx,Application
+ruby,Language runtime
+scratch,Other
+php,Language runtime
+fedora,OS
+busybox,Other
+postgres,Application
+base/archlinux,OS
+tomcat,Application
+mysql,Application
+phusion/baseimage,OS
+phusion/baseimage:0.9.16,OS
+dockerfile/ubuntu,OS
+jenkins,Application
+iojs,Language runtime
+elasticsearch,Application
+nvidia/cuda:7.5-cudnn5-devel-ubuntu14.04,OS
+32bit/ubuntu:14.04,OS
+vitess/bootstrap:common,Application
+cattle/agent:latest,Application
+google/golang:latest,Language runtime
+vuls/vuls-base:latest,Application
+rancher/dind:v0.1.0,Application
+octohost/nodejs,Language runtime
+gcr.io/google_containers/ubuntu-slim:0.4,OS
+abernix/meteord:onbuild,Application
+vitess/bootstrap:mysql56,Application
+b.gcr.io/tensorflow/tensorflow:latest,Application
+base,OS
+base/archlinux:2014.07.03,OS
+{{ namespace }}/{{ base_distro }}-{{ install_type }}-base:{{ tag }},Variable
+anapsix/alpine-java:8,Language runtime
+cuda,Application
+docker.io/java:openjdk-8-jdk,Language runtime
+microsoft/windowsservercore,Application
+{{ namespace }}/{{ image_prefix }}base:{{ tag }},Variable
+{{ namespace }}/{{ image_prefix }}openstack-base:{{ tag }},Variable
+redis,Application
+karalabe/xgo-base,Application

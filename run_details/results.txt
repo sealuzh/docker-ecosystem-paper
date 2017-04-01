@@ -1,0 +1,21 @@
+Classification of RUN changes
+
+Total, 672700, 1
+Dependencies, 312663, 0.464
+Filesystem, 191756, 0.285
+Permissions, 45957, 0.068
+Build/Execute, 32755, 0.048
+Environment, 3988, 0.0059
+Others, 85581, 0.127
+
+
+
+Classification of RUN instructions in general
+
+Total, 360046, 1
+Dependencies, 162770, 0.452
+Filesystem, 109275, 0.303
+Permissions, 26174, 0.072
+Build/Execute, 19018, 0.052
+Environment, 2204, 0.0061
+Others,40605 , 0.112

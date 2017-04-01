@@ -1,0 +1,32 @@
+Retrieve Top 100 changes in RUN
+select executable, count(*) from diff_type where instruction like 'RUN%' group by executable order by 2 desc limit 100
+
+Classification:
+
+
+Dependencies
+'apt-get', 'npm', 'yum', 'curl', 'pip', 'wget', 'git', 'apk', 'gem', 'bower', 'add-apt-repository', 'dpkg', 'rpm', 'bundle', 'apt-key', 'pip3', 'dnf', 'conda', 'cabal', 'easy_install', 'nvm', 'lein', 'composer', 'mvn', 'apk-install', 'apt', 'pecl', 'puppet', 'svn', 'godep'
+
+File System Handling
+'echo', 'mkdir', 'rm', 'cd', 'tar', 'sed', 'ln', 'mv', 'cp', 'unzip', 'pacman', 'touch', 'ls', 'cat', 'find'
+
+Environment
+'set', 'export', 'source', 'virtualenv'
+
+Build/Execute
+'make', 'go', './configure', '/bin/bash', 'bash', 'python', 'service', 'sh', 'cmake', 'install', 'python3'
+
+Permissions
+'chmod', 'chown', 'useradd', 'groupadd', 'adduser', 'usermod', 'addgroup'
+
+
+SQL Query
+==============
+
+Classification of RUN instructions in general
+select count(*) from df_run where current = true and executable in (`list`)
+
+
+Classification of RUN instruction changes
+select count(*) from diff_type where instruction like 'RUN%' and executable in (`list`)
+
